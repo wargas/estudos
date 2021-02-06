@@ -20,7 +20,7 @@ export default (props) => {
     const loadDisciplinas = async () => {
         setLoading(true)
         try {
-            const { data } = await axios.get("http://localhost:3000/api/disciplinas");
+            const { data } = await axios.get("/api/disciplinas");
 
             setItems(data)
         } catch (error) {

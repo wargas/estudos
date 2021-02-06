@@ -14,8 +14,8 @@ export default (props) => {
 
     const loadDisciplina = async () => {
         try {
-            // const { data } = await axios.get(`/api/disciplinas/${query.id}`);
-            const { data } = await axios.get(`/api/disciplinas/60195270997703550c77e1c6`);
+            const { data } = await axios.get(`/api/disciplinas/${query.id}`);
+            // const { data } = await axios.get(`/api/disciplinas/60195270997703550c77e1c6`);
             setDisciplina(data)
         } catch (e) {
         }
